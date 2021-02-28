@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<h1>Enter Job Data</h1>
+<style>
+h1{
+    background-color: rgb(64, 130, 192) ;
+    color: black;
+    font-size: xx-large;
+    height: 42px;
+    text-align: center;
+    border: 5px solid orangered;   
+}
+
+.q {
+    background-color: rgb(196, 155, 94);
+    align-content: center;
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+</style>
+
+</head>
+<body>
+
+    <div class="q">
+<form>
+
+    <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="Enter Job Title" name="title"  size="30" required><br><br>
+
+    <label for="type"><b>Job Type</b></label>
+    <select name="type" id="type" required>
+        <option></option>
+        <option value="fulltime">Full-Time</option>
+        <option value="parttime">Part-Time</option>
+        <option value="intern">Internship</option>
+        <option value="contract">Contract-Employee</option>
+        </select><br><br>
+
+        <label for="department"><b>Department</b></label>
+        <select name="type" id="type" required>
+            <option></option>
+            <option value="sales">Sales</option>
+            <option value="it">IT</option>
+            <option value="design">Design</option>
+            <option value="manufacturing">Manufacturing</option>
+            <option value="testing">Testing</option>
+            <option value="infrastructure">Infrastructure</option>
+            </select><br><br>
+
+            <label for="country"><b>Country</b></label>
+            <select name="type" id="type" required>
+                <option></option>
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="england">England</option>
+                <option value="newzealand">Newzealand</option>
+                <option value="northkorea">North Korea</option>
+                <option value="japan">Japan</option>
+                </select><br><br>
+
+                <label for="description"><b>Job-Description:</b></label><br>
+<textarea id="review" name="review" placeholder="Enter Job Description" rows="3" cols="70" required></textarea><br><br>
+
+<label for="date"><b>Opening Date</b></label> 
+<input type="date" id="date" name="date"><br><br><br><br>
+
+<input type="submit" value="Submit" onclick="create_job.html">
+
+
+</form>
+</div>
+
+<p id="demo"></p>
+
+
+
+</body>
+</html>
